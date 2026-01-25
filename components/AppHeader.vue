@@ -28,6 +28,13 @@
             实践地图
           </NuxtLink>
           <NuxtLink
+            to="/games"
+            class="nav-link text-white/90 hover:text-white transition-colors"
+            :class="{ 'text-white font-semibold border-b-2 border-accent': route.path.startsWith('/games') }"
+          >
+            小游戏
+          </NuxtLink>
+          <NuxtLink
             to="/about"
             class="nav-link text-white/90 hover:text-white transition-colors"
             :class="{ 'text-white font-semibold border-b-2 border-accent': route.path === '/about' }"
@@ -86,6 +93,13 @@
               @click="isMenuOpen = false"
             >
               实践地图
+            </NuxtLink>
+            <NuxtLink
+              to="/games"
+              class="px-4 py-2 rounded-lg hover:bg-primary-700 transition-colors"
+              @click="isMenuOpen = false"
+            >
+              小游戏
             </NuxtLink>
             <NuxtLink
               to="/about"
