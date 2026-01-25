@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout:*)",
+      "Bash(ping:*)",
+      "Bash(npx nuxt dev --port 3000)",
+      "Bash(del \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\本溪实践网站\\\\nul\")",
+      "Bash(npm run build:*)",
+      "Bash(npx nuxt typecheck:*)",
+      "Bash(node -e:*)",
+      "Bash(node -c:*)"
+    ]
+  }
+}

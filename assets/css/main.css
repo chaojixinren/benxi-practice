@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局样式 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* 地图容器样式 */
+.leaflet-container {
+  font-family: inherit;
+  z-index: 1;
+}
+
+/* 自定义地图弹窗样式 */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  overflow: hidden;
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  min-width: 280px;
+}
+
+.leaflet-popup-tip {
+  background: white;
+}
+
+/* 自定义标记样式 */
+.custom-marker {
+  background: #003366;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.custom-marker:hover {
+  transform: scale(1.1);
+}
+
+.custom-marker.active {
+  background: #FF6600;
+  transform: scale(1.2);
+}
+
+/* 动画效果 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.3s ease;
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* 地图路线动画 */
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.route-line {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards;
+}
+
+/* 响应式地图高度 */
+@layer components {
+  .map-container {
+    @apply w-full rounded-xl overflow-hidden shadow-lg;
+    height: 500px;
+  }
+
+  @screen md {
+    .map-container {
+      height: 600px;
+    }
+  }
+
+  @screen lg {
+    .map-container {
+      height: 650px;
+    }
+  }
+}
+
+/* 卡片悬浮效果 */
+.hover-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* 按钮样式 */
+.btn-primary {
+  @apply bg-primary text-white px-6 py-2 rounded-lg font-medium
+         hover:bg-primary-700 transition-colors duration-200
+         focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+}
+
+.btn-accent {
+  @apply bg-accent text-white px-6 py-2 rounded-lg font-medium
+         hover:bg-accent-dark transition-colors duration-200
+         focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
+}
+
+.btn-outline {
+  @apply border-2 border-primary text-primary px-6 py-2 rounded-lg font-medium
+         hover:bg-primary hover:text-white transition-colors duration-200
+         focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+}
