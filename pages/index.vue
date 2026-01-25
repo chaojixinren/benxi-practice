@@ -4,8 +4,18 @@
 
     <main class="flex-grow">
       <!-- 英雄区域 -->
-      <section class="bg-gradient-to-br from-primary via-primary-700 to-primary-800 text-white py-16 md:py-24">
-        <div class="container mx-auto px-4 text-center">
+      <section class="relative text-white py-16 md:py-24 overflow-hidden">
+        <!-- 背景图片 -->
+        <div class="absolute inset-0">
+          <img
+            src="/images/bg.jpg"
+            alt="本溪实践背景"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary-700/70 to-primary-800/80"></div>
+        </div>
+
+        <div class="container mx-auto px-4 text-center relative z-10">
           <h1 class="text-4xl md:text-6xl font-bold mb-6">
             贡物新绎 溯产助传
           </h1>

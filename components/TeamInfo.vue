@@ -3,8 +3,12 @@
     <div class="flex flex-col md:flex-row md:items-start gap-6">
       <!-- 团队标识 -->
       <div class="flex-shrink-0">
-        <div class="w-20 h-20 md:w-24 md:h-24 bg-gradient-to-br from-primary to-primary-500 rounded-2xl flex items-center justify-center text-white">
-          <span class="text-3xl md:text-4xl font-bold">DUT</span>
+        <div class="w-20 h-20 md:w-24 md:h-24 rounded-2xl overflow-hidden shadow-md">
+          <img
+            src="/images/队徽.png"
+            alt="团队队徽"
+            class="w-full h-full object-cover"
+          />
         </div>
       </div>
 
