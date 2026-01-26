@@ -12,8 +12,11 @@
             alt="本溪实践背景"
             class="w-full h-full object-cover"
           />
-          <div class="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary-700/70 to-primary-800/80"></div>
+          <div class="absolute inset-0 bg-gradient-to-b from-primary/85 via-primary-700/75 to-sky-600/90"></div>
         </div>
+
+        <!-- 底部过渡渐变 -->
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-sky-200 to-transparent"></div>
 
         <div class="container mx-auto px-4 text-center relative z-10">
           <h1 class="text-4xl md:text-6xl font-bold mb-6">
@@ -57,87 +60,325 @@
         </div>
       </section>
 
-      <!-- 时间线 - 平铺卡片式 -->
-      <section class="py-12 md:py-16 bg-gray-50">
+      <!-- 时间线 - 火车车厢式 -->
+      <section class="pt-8 pb-16 md:pt-12 md:pb-24 bg-gradient-to-b from-sky-200 via-sky-100 to-green-100 overflow-hidden relative">
+        <!-- 顶部融合层 -->
+        <div class="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-sky-200 to-transparent"></div>
+
+        <!-- 背景装饰 - 云朵 -->
+        <div class="absolute top-16 left-[5%] w-20 h-8 bg-white/70 rounded-full blur-sm"></div>
+        <div class="absolute top-12 left-[12%] w-14 h-6 bg-white/50 rounded-full blur-sm"></div>
+        <div class="absolute top-24 left-[8%] w-10 h-5 bg-white/40 rounded-full blur-sm"></div>
+
+        <div class="absolute top-20 right-[8%] w-24 h-10 bg-white/60 rounded-full blur-sm"></div>
+        <div class="absolute top-14 right-[15%] w-16 h-7 bg-white/40 rounded-full blur-sm"></div>
+        <div class="absolute top-28 right-[12%] w-12 h-5 bg-white/50 rounded-full blur-sm"></div>
+
+        <!-- 中间的云朵 -->
+        <div class="absolute top-32 left-[30%] w-16 h-6 bg-white/30 rounded-full blur-sm"></div>
+        <div class="absolute top-40 right-[35%] w-14 h-5 bg-white/25 rounded-full blur-sm"></div>
+
         <div class="container mx-auto px-4">
-          <div class="text-center mb-10">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">实践时间线</h2>
-            <p class="text-gray-600">点击卡片查看每日实践详情</p>
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">实践专列</h2>
+            <p class="text-gray-600 text-lg">点击车厢，开启每日精彩旅程</p>
           </div>
 
-          <!-- 横向时间轴指示器 -->
-          <div class="hidden md:flex items-center justify-center mb-8 max-w-5xl mx-auto">
-            <div class="flex items-center w-full">
-              <template v-for="(location, index) in sortedLocations" :key="location.id">
-                <div class="flex flex-col items-center">
-                  <div
-                    class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm"
-                    :class="getDayBgColor(location.id)"
-                  >
-                    {{ location.id }}
+          <!-- 火车容器 -->
+          <div class="relative">
+            <!-- 桌面端：横向火车 -->
+            <div class="hidden xl:block">
+              <div class="flex items-end justify-center pb-12">
+                <!-- 火车头 -->
+                <div class="train-head relative mr-0 flex-shrink-0">
+                  <!-- 烟囱 -->
+                  <div class="absolute -top-16 left-10">
+                    <div class="w-10 h-16 bg-gradient-to-b from-gray-600 to-gray-800 rounded-t-lg border-2 border-gray-500">
+                      <div class="absolute top-1 left-1/2 -translate-x-1/2 w-6 h-2 bg-gray-500 rounded"></div>
+                    </div>
+                    <!-- 烟雾 -->
+                    <div class="smoke-container absolute -top-6 left-1/2 -translate-x-1/2">
+                      <div class="smoke smoke-1"></div>
+                      <div class="smoke smoke-2"></div>
+                      <div class="smoke smoke-3"></div>
+                    </div>
                   </div>
-                  <span class="text-xs text-gray-500 mt-1">{{ formatDate(location.date) }}</span>
+
+                  <!-- 车头主体 -->
+                  <div class="w-44 h-56 bg-gradient-to-b from-primary-500 via-primary-600 to-primary-800 rounded-t-[2rem] rounded-br-[3rem] relative shadow-2xl border-2 border-primary-400">
+                    <!-- 顶部装饰线 -->
+                    <div class="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-400 rounded-t-[2rem]"></div>
+
+                    <!-- 车头徽章 -->
+                    <div class="absolute top-6 left-1/2 -translate-x-1/2 w-20 h-20 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full flex items-center justify-center shadow-lg border-4 border-yellow-200">
+                      <div class="text-center">
+                        <span class="text-primary-800 font-black text-sm leading-tight block">实践</span>
+                        <span class="text-primary-800 font-black text-sm leading-tight block">专列</span>
+                      </div>
+                    </div>
+
+                    <!-- 车窗 -->
+                    <div class="absolute top-32 left-1/2 -translate-x-1/2 w-28 h-12 bg-gradient-to-b from-sky-300 to-sky-400 rounded-lg border-4 border-primary-900 shadow-inner">
+                      <div class="absolute inset-1 bg-gradient-to-b from-sky-100 to-sky-200 rounded opacity-50"></div>
+                    </div>
+
+                    <!-- 车头底部装饰 -->
+                    <div class="absolute bottom-0 left-0 right-0 h-12 bg-primary-900 rounded-br-[2rem] flex items-center justify-center">
+                      <div class="w-20 h-6 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full shadow-md"></div>
+                    </div>
+
+                    <!-- 铆钉装饰 -->
+                    <div class="absolute top-28 left-3 w-2 h-2 bg-gray-400 rounded-full shadow-inner"></div>
+                    <div class="absolute top-28 right-3 w-2 h-2 bg-gray-400 rounded-full shadow-inner"></div>
+                  </div>
+
+                  <!-- 车轮 -->
+                  <div class="absolute -bottom-6 left-3">
+                    <div class="w-14 h-14 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full border-4 border-gray-500 flex items-center justify-center wheel shadow-lg">
+                      <div class="w-6 h-6 bg-gray-400 rounded-full border-2 border-gray-500"></div>
+                    </div>
+                  </div>
+                  <div class="absolute -bottom-6 right-6">
+                    <div class="w-14 h-14 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full border-4 border-gray-500 flex items-center justify-center wheel shadow-lg">
+                      <div class="w-6 h-6 bg-gray-400 rounded-full border-2 border-gray-500"></div>
+                    </div>
+                  </div>
+
+                  <!-- 连接器 -->
+                  <div class="absolute -right-4 bottom-12 w-8 h-6 bg-gradient-to-r from-gray-600 to-gray-700 rounded shadow-md border border-gray-500"></div>
                 </div>
-                <div
-                  v-if="index < sortedLocations.length - 1"
-                  class="flex-grow h-1 bg-gradient-to-r mx-2"
-                  :class="getLineGradient(location.id)"
-                />
-              </template>
-            </div>
-          </div>
 
-          <!-- 卡片网格 -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
-            <NuxtLink
-              v-for="location in sortedLocations"
-              :key="location.id"
-              :to="`/locations/day${location.id}`"
-              class="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-            >
-              <!-- 卡片头部 -->
-              <div
-                class="h-32 relative overflow-hidden"
-                :class="getDayGradient(location.id)"
-              >
-                <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-                  <span class="text-4xl font-bold mb-1">DAY {{ location.id }}</span>
-                  <span class="text-sm opacity-80">{{ formatDate(location.date) }}</span>
-                </div>
-                <!-- 装饰圆圈 -->
-                <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-white/10 rounded-full"></div>
-                <div class="absolute -top-4 -left-4 w-16 h-16 bg-white/10 rounded-full"></div>
-              </div>
-
-              <!-- 卡片内容 -->
-              <div class="p-5">
-                <h3 class="font-bold text-gray-800 text-lg mb-2 group-hover:text-primary transition-colors line-clamp-1">
-                  {{ location.name }}
-                </h3>
-                <p class="text-gray-600 text-sm line-clamp-2 mb-4">
-                  {{ location.description }}
-                </p>
-
-                <!-- 标签 -->
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                  <span
-                    v-for="highlight in (location.highlights || []).slice(0, 2)"
-                    :key="highlight"
-                    class="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded-full"
+                <!-- 车厢 -->
+                <template v-for="(location, index) in sortedLocations" :key="location.id">
+                  <NuxtLink
+                    :to="`/locations/day${location.id}`"
+                    class="train-car group relative flex-shrink-0"
                   >
-                    {{ highlight }}
-                  </span>
-                </div>
+                    <!-- 连接器（左侧） -->
+                    <div class="absolute -left-4 bottom-16 w-8 h-6 bg-gradient-to-r from-gray-700 to-gray-600 rounded shadow-md border border-gray-500 z-10"></div>
 
-                <!-- 查看详情 -->
-                <div class="flex items-center text-primary text-sm font-medium group-hover:translate-x-1 transition-transform">
-                  <span>查看详情</span>
-                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                  </svg>
+                    <!-- 车厢主体 -->
+                    <div class="w-56 bg-gradient-to-b from-white to-gray-100 rounded-t-2xl shadow-2xl overflow-hidden relative carriage border-2 border-gray-200">
+                      <!-- 车顶 -->
+                      <div class="h-4 rounded-t-2xl" :class="getDayBgColor(location.id)">
+                        <div class="h-full bg-gradient-to-b from-white/30 to-transparent rounded-t-2xl"></div>
+                      </div>
+
+                      <!-- 车窗区域（背景图） -->
+                      <div class="mx-3 mt-3 rounded-xl overflow-hidden shadow-lg border-4 relative" :class="getWindowBorder(location.id)">
+                        <!-- 车窗顶部装饰 -->
+                        <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-b from-black/20 to-transparent z-10"></div>
+
+                        <div class="h-36 relative overflow-hidden">
+                          <img
+                            :src="`/images/d${location.id}/bg.jpg`"
+                            :alt="location.name"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                          />
+                          <div class="absolute inset-0" :class="getDayOverlay(location.id)"></div>
+                          <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                            <span class="text-5xl font-black drop-shadow-lg tracking-wider">DAY</span>
+                            <span class="text-6xl font-black drop-shadow-lg -mt-2">{{ location.id }}</span>
+                            <span class="text-sm opacity-90 drop-shadow mt-1 bg-black/30 px-3 py-0.5 rounded-full">{{ formatDate(location.date) }}</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 车厢内容 -->
+                      <div class="p-4 text-center">
+                        <h3 class="font-bold text-gray-800 text-base group-hover:text-primary transition-colors">
+                          {{ location.name }}
+                        </h3>
+                        <div class="flex items-center justify-center text-primary text-sm font-medium mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                          <span>点击进入</span>
+                          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
+
+                      <!-- 车厢底部装饰 -->
+                      <div class="h-5 bg-gradient-to-b from-gray-200 to-gray-300 border-t-2 border-gray-300 flex items-center justify-around px-4">
+                        <div class="w-8 h-2 bg-gray-400 rounded"></div>
+                        <div class="w-8 h-2 bg-gray-400 rounded"></div>
+                      </div>
+
+                      <!-- 铆钉装饰 -->
+                      <div class="absolute top-6 left-2 w-2 h-2 bg-gray-400 rounded-full shadow-inner"></div>
+                      <div class="absolute top-6 right-2 w-2 h-2 bg-gray-400 rounded-full shadow-inner"></div>
+                      <div class="absolute bottom-8 left-2 w-2 h-2 bg-gray-400 rounded-full shadow-inner"></div>
+                      <div class="absolute bottom-8 right-2 w-2 h-2 bg-gray-400 rounded-full shadow-inner"></div>
+                    </div>
+
+                    <!-- 车轮 -->
+                    <div class="absolute -bottom-6 left-6">
+                      <div class="w-12 h-12 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full border-4 border-gray-500 flex items-center justify-center wheel shadow-lg">
+                        <div class="w-5 h-5 bg-gray-400 rounded-full border-2 border-gray-500"></div>
+                      </div>
+                    </div>
+                    <div class="absolute -bottom-6 right-6">
+                      <div class="w-12 h-12 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full border-4 border-gray-500 flex items-center justify-center wheel shadow-lg">
+                        <div class="w-5 h-5 bg-gray-400 rounded-full border-2 border-gray-500"></div>
+                      </div>
+                    </div>
+
+                    <!-- 连接器（右侧） -->
+                    <div v-if="index < sortedLocations.length - 1" class="absolute -right-4 bottom-16 w-8 h-6 bg-gradient-to-r from-gray-600 to-gray-700 rounded shadow-md border border-gray-500 z-10"></div>
+                  </NuxtLink>
+                </template>
+              </div>
+
+              <!-- 铁轨 -->
+              <div class="relative h-8 max-w-7xl mx-auto">
+                <!-- 铁轨主体 -->
+                <div class="absolute inset-x-0 top-0 h-3 bg-gradient-to-b from-gray-500 to-gray-600 rounded shadow-md"></div>
+                <div class="absolute inset-x-0 bottom-0 h-3 bg-gradient-to-b from-gray-500 to-gray-600 rounded shadow-md"></div>
+                <!-- 枕木 -->
+                <div class="absolute inset-0 flex justify-between px-2">
+                  <div v-for="i in 40" :key="i" class="w-4 h-full bg-gradient-to-b from-amber-700 to-amber-900 rounded-sm shadow"></div>
                 </div>
               </div>
-            </NuxtLink>
+
+              <!-- 地面 -->
+              <div class="h-4 max-w-7xl mx-auto bg-gradient-to-b from-green-200 to-green-300 rounded-b-lg mt-1"></div>
+            </div>
+
+            <!-- 平板/中等屏幕：可滚动的火车 -->
+            <div class="hidden md:block xl:hidden">
+              <div class="overflow-x-auto pb-12 scrollbar-hide">
+                <div class="flex items-end pl-8 pr-8 min-w-max">
+                  <!-- 火车头 -->
+                  <div class="train-head relative mr-0 flex-shrink-0">
+                    <div class="absolute -top-10 left-6">
+                      <div class="w-8 h-12 bg-gradient-to-b from-gray-600 to-gray-800 rounded-t-lg"></div>
+                      <div class="smoke-container absolute -top-4 left-1/2 -translate-x-1/2">
+                        <div class="smoke smoke-1"></div>
+                        <div class="smoke smoke-2"></div>
+                      </div>
+                    </div>
+                    <div class="w-36 h-44 bg-gradient-to-b from-primary-500 to-primary-800 rounded-t-3xl rounded-br-3xl relative shadow-xl border-2 border-primary-400">
+                      <div class="absolute top-0 left-0 right-0 h-2 bg-yellow-400 rounded-t-3xl"></div>
+                      <div class="absolute top-5 left-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full flex items-center justify-center shadow-lg border-4 border-yellow-200">
+                        <span class="text-primary-800 font-bold text-xs text-center">实践<br/>专列</span>
+                      </div>
+                      <div class="absolute bottom-16 left-1/2 -translate-x-1/2 w-24 h-10 bg-sky-300 rounded-lg border-4 border-primary-900"></div>
+                      <div class="absolute bottom-0 left-0 right-0 h-10 bg-primary-900 rounded-br-2xl flex items-center justify-center">
+                        <div class="w-14 h-4 bg-yellow-400 rounded-full"></div>
+                      </div>
+                    </div>
+                    <div class="absolute -bottom-5 left-2 w-12 h-12 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full border-4 border-gray-500 wheel shadow-lg"></div>
+                    <div class="absolute -bottom-5 right-4 w-12 h-12 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full border-4 border-gray-500 wheel shadow-lg"></div>
+                    <div class="absolute -right-3 bottom-12 w-6 h-5 bg-gray-600 rounded"></div>
+                  </div>
+
+                  <!-- 车厢 -->
+                  <template v-for="(location, index) in sortedLocations" :key="location.id">
+                    <NuxtLink :to="`/locations/day${location.id}`" class="train-car group relative flex-shrink-0">
+                      <div class="absolute -left-3 bottom-14 w-6 h-5 bg-gray-600 rounded z-10"></div>
+                      <div class="w-48 bg-gradient-to-b from-white to-gray-100 rounded-t-xl shadow-xl overflow-hidden carriage border-2 border-gray-200">
+                        <div class="h-3" :class="getDayBgColor(location.id)"></div>
+                        <div class="h-32 relative overflow-hidden mx-2 mt-2 rounded-lg border-4" :class="getWindowBorder(location.id)">
+                          <img :src="`/images/d${location.id}/bg.jpg`" :alt="location.name" class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                          <div class="absolute inset-0" :class="getDayOverlay(location.id)"></div>
+                          <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                            <span class="text-4xl font-black drop-shadow-lg">DAY</span>
+                            <span class="text-5xl font-black drop-shadow-lg -mt-1">{{ location.id }}</span>
+                          </div>
+                        </div>
+                        <div class="p-3 text-center">
+                          <h3 class="font-bold text-gray-800 text-sm">{{ location.name }}</h3>
+                        </div>
+                        <div class="h-4 bg-gray-200 border-t border-gray-300"></div>
+                      </div>
+                      <div class="absolute -bottom-5 left-5 w-10 h-10 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full border-4 border-gray-500 wheel shadow-lg"></div>
+                      <div class="absolute -bottom-5 right-5 w-10 h-10 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full border-4 border-gray-500 wheel shadow-lg"></div>
+                      <div v-if="index < sortedLocations.length - 1" class="absolute -right-3 bottom-14 w-6 h-5 bg-gray-600 rounded z-10"></div>
+                    </NuxtLink>
+                  </template>
+                </div>
+              </div>
+              <!-- 铁轨 -->
+              <div class="relative h-6 mx-4">
+                <div class="absolute inset-x-0 top-0 h-2 bg-gray-500 rounded"></div>
+                <div class="absolute inset-x-0 bottom-0 h-2 bg-gray-500 rounded"></div>
+              </div>
+              <div class="h-3 mx-4 bg-gradient-to-b from-green-200 to-green-300 rounded-b-lg mt-1"></div>
+            </div>
+
+            <!-- 手机端：竖向车厢 -->
+            <div class="md:hidden">
+              <div class="relative pl-10">
+                <!-- 竖向铁轨 -->
+                <div class="absolute left-3 top-0 bottom-0 w-5">
+                  <div class="absolute left-0 inset-y-0 w-1.5 bg-gradient-to-b from-gray-500 to-gray-600 rounded"></div>
+                  <div class="absolute right-0 inset-y-0 w-1.5 bg-gradient-to-b from-gray-500 to-gray-600 rounded"></div>
+                </div>
+
+                <!-- 火车头 -->
+                <div class="relative mb-6 ml-4">
+                  <div class="bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 rounded-2xl p-5 shadow-xl border-2 border-primary-400">
+                    <div class="flex items-center">
+                      <div class="w-20 h-20 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full flex items-center justify-center mr-5 shadow-lg border-4 border-yellow-200">
+                        <span class="text-primary-800 font-black text-base text-center">实践<br/>专列</span>
+                      </div>
+                      <div class="text-white">
+                        <h3 class="font-bold text-xl">实践专列</h3>
+                        <p class="text-primary-200">5站精彩旅程</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 轮子 -->
+                  <div class="absolute -left-7 top-1/2 -translate-y-1/2 w-8 h-8 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full border-3 border-gray-500 shadow-lg"></div>
+                </div>
+
+                <!-- 车厢 -->
+                <div class="space-y-5 ml-4">
+                  <NuxtLink
+                    v-for="location in sortedLocations"
+                    :key="location.id"
+                    :to="`/locations/day${location.id}`"
+                    class="block group relative"
+                  >
+                    <div class="bg-gradient-to-b from-white to-gray-50 rounded-2xl shadow-xl overflow-hidden border-2 border-gray-200">
+                      <!-- 顶部装饰 -->
+                      <div class="h-2" :class="getDayBgColor(location.id)"></div>
+
+                      <div class="flex p-3">
+                        <!-- 车窗（图片） -->
+                        <div class="w-32 h-32 relative overflow-hidden rounded-xl flex-shrink-0 border-4 shadow-md" :class="getWindowBorder(location.id)">
+                          <img
+                            :src="`/images/d${location.id}/bg.jpg`"
+                            :alt="location.name"
+                            class="absolute inset-0 w-full h-full object-cover"
+                          />
+                          <div class="absolute inset-0" :class="getDayOverlay(location.id)"></div>
+                          <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                            <span class="text-2xl font-black drop-shadow-lg">DAY</span>
+                            <span class="text-4xl font-black drop-shadow-lg -mt-1">{{ location.id }}</span>
+                          </div>
+                        </div>
+
+                        <!-- 内容 -->
+                        <div class="flex-grow pl-4 flex flex-col justify-center">
+                          <h3 class="font-bold text-gray-800 text-lg mb-2 group-hover:text-primary transition-colors">
+                            {{ location.name }}
+                          </h3>
+                          <p class="text-gray-500 text-sm mb-3">{{ formatDate(location.date) }}</p>
+                          <div class="flex items-center text-primary font-medium">
+                            <span>查看详情</span>
+                            <svg class="w-5 h-5 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 轮子 -->
+                    <div class="absolute -left-7 top-1/2 -translate-y-1/2 w-8 h-8 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full border-3 border-gray-500 shadow-lg"></div>
+                  </NuxtLink>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -213,6 +454,30 @@ function getDayGradient(day: number): string {
   return gradients[day] || 'bg-gradient-to-br from-primary to-primary-800'
 }
 
+// 每天的背景图遮罩
+function getDayOverlay(day: number): string {
+  const overlays: Record<number, string> = {
+    1: 'bg-gradient-to-br from-gray-900/70 via-gray-800/60 to-gray-900/70',
+    2: 'bg-gradient-to-br from-red-900/70 via-red-800/60 to-red-900/70',
+    3: 'bg-gradient-to-br from-cyan-900/70 via-blue-800/60 to-blue-900/70',
+    4: 'bg-gradient-to-br from-purple-900/70 via-purple-800/60 to-indigo-900/70',
+    5: 'bg-gradient-to-br from-amber-900/70 via-orange-800/60 to-red-900/70'
+  }
+  return overlays[day] || 'bg-gradient-to-br from-primary/70 to-primary-800/70'
+}
+
+// 车窗边框颜色
+function getWindowBorder(day: number): string {
+  const borders: Record<number, string> = {
+    1: 'border-gray-600',
+    2: 'border-red-700',
+    3: 'border-cyan-600',
+    4: 'border-purple-600',
+    5: 'border-amber-600'
+  }
+  return borders[day] || 'border-primary'
+}
+
 // 每天的背景色（圆点）
 function getDayBgColor(day: number): string {
   const colors: Record<number, string> = {
@@ -257,5 +522,113 @@ useHead({
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* 火车动画 */
+.train-car {
+  transition: transform 0.3s ease;
+}
+.train-car:hover {
+  transform: translateY(-8px);
+}
+.train-car:hover .carriage {
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* 车轮旋转动画 */
+.wheel {
+  animation: wheelSpin 1.5s linear infinite;
+  position: relative;
+}
+.wheel::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 2px;
+  background: #666;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+}
+.wheel::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 70%;
+  background: #666;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+}
+@keyframes wheelSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 暂停动画（默认暂停，悬停时播放） */
+.train-car .wheel {
+  animation-play-state: paused;
+}
+.train-car:hover .wheel {
+  animation-play-state: running;
+}
+
+/* 烟雾动画 */
+.smoke-container {
+  width: 40px;
+  height: 50px;
+}
+.smoke {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle, rgba(220, 220, 220, 0.9) 0%, rgba(200, 200, 200, 0.6) 50%, transparent 100%);
+  border-radius: 50%;
+  animation: smokePuff 2.5s ease-out infinite;
+}
+.smoke-1 {
+  left: 0;
+  animation-delay: 0s;
+}
+.smoke-2 {
+  left: 12px;
+  animation-delay: 0.6s;
+}
+.smoke-3 {
+  left: 6px;
+  animation-delay: 1.2s;
+}
+@keyframes smokePuff {
+  0% {
+    opacity: 0.9;
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px) scale(2.5);
+  }
+}
+
+/* 隐藏滚动条 */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* 火车头动画 */
+.train-head {
+  animation: trainBob 3s ease-in-out infinite;
+}
+@keyframes trainBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
 }
 </style>

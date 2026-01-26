@@ -119,6 +119,61 @@
               </div>
             </div>
 
+            <!-- 细鳞鱼科普 -->
+            <div class="mb-12 bg-gradient-to-r from-cyan-50 to-blue-50 rounded-2xl p-8">
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <span class="w-10 h-10 bg-cyan-600 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">🐟</span>
+                细鳞鱼档案
+              </h2>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-4 text-gray-600">
+                  <p><strong class="text-cyan-700">"水中活化石"</strong>——细鳞鱼，学名细鳞鲑，是第四纪冰川时期遗留下来的珍稀冷水性鱼类，对水质、水温要求极为苛刻，只能在清澈、低温的山泉水中生存。</p>
+                  <p>桓仁地处长白山余脉，山涧泉水终年清冽，水温常年保持在4-18℃之间，为细鳞鱼提供了得天独厚的生长环境。</p>
+                  <p>据史料记载，细鳞鱼早在清代便是进贡皇室的<strong class="text-cyan-700">"贡品"</strong>，因其肉质细嫩、营养丰富而备受青睐，延续千年的"贡鱼"美誉至今流传。</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                  <h4 class="font-bold text-gray-800 mb-3 text-center">养殖特点</h4>
+                  <ul class="space-y-2 text-gray-600 text-sm">
+                    <li class="flex items-start">
+                      <span class="w-2 h-2 bg-cyan-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                      仿生态养殖：模拟天然山涧环境
+                    </li>
+                    <li class="flex items-start">
+                      <span class="w-2 h-2 bg-cyan-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                      泉水养殖：水源来自深山泉眼
+                    </li>
+                    <li class="flex items-start">
+                      <span class="w-2 h-2 bg-cyan-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                      生长周期长：需3-4年方可上市
+                    </li>
+                    <li class="flex items-start">
+                      <span class="w-2 h-2 bg-cyan-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                      零污染：全程无抗生素、无添加
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 视频展示 -->
+            <div class="mb-12">
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <span class="w-10 h-10 bg-cyan-600 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">🎬</span>
+                实践纪录
+              </h2>
+              <div class="aspect-video rounded-xl overflow-hidden shadow-lg bg-black">
+                <video
+                  controls
+                  class="w-full h-full object-contain"
+                  poster="/images/d3/bg.jpg"
+                >
+                  <source src="/videos/day3.mp4" type="video/mp4" />
+                  您的浏览器不支持视频播放
+                </video>
+              </div>
+              <p class="text-center text-gray-500 text-sm mt-3">深入桓仁冷水鱼渔场，探访"水中活化石"的养殖奥秘</p>
+            </div>
+
             <!-- 结语 -->
             <div class="mb-12">
               <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">

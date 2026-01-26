@@ -129,6 +129,56 @@
               </div>
             </div>
 
+            <!-- 遗址档案 -->
+            <div class="mb-12 bg-gradient-to-r from-gray-100 to-orange-50 rounded-2xl p-8">
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <span class="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">📋</span>
+                遗址档案
+              </h2>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                  <p class="text-2xl font-bold text-primary">13</p>
+                  <p class="text-gray-500 text-sm">平方公里核心区</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                  <p class="text-2xl font-bold text-primary">50+</p>
+                  <p class="text-gray-500 text-sm">处工业遗存</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                  <p class="text-2xl font-bold text-primary">103年</p>
+                  <p class="text-gray-500 text-sm">1号高炉运行</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 text-center shadow-sm">
+                  <p class="text-2xl font-bold text-primary">AAAA</p>
+                  <p class="text-gray-500 text-sm">国家级景区</p>
+                </div>
+              </div>
+              <div class="space-y-3 text-gray-600">
+                <p><strong class="text-gray-800">1号高炉：</strong>1911年投产，高60米，容积328立方米，采用德国克虏伯公司设计，配备电动鼓风机与自动化上料系统，日产铁量达100吨，是中国近代机械化炼铁的开端。</p>
+                <p><strong class="text-gray-800">历史地位：</strong>2009年被列为全国重点文物保护单位，2019年获评国家AAAA级旅游景区。2014年12月1号高炉正式熄火，完整保留了从土法炼铁到现代化生产的全链条工业遗存。</p>
+                <p><strong class="text-gray-800">"一五计划"贡献：</strong>1953-1957年期间，本钢被列为"156项重点工程"配套项目，累计向鞍钢、武钢供应优质焦炭800万吨，占全国统配焦炭总量的15%。</p>
+              </div>
+            </div>
+
+            <!-- 视频展示 -->
+            <div class="mb-12">
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <span class="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">🎬</span>
+                实践纪录
+              </h2>
+              <div class="aspect-video rounded-xl overflow-hidden shadow-lg bg-black">
+                <video
+                  controls
+                  class="w-full h-full object-contain"
+                  poster="/images/d1/bg.jpg"
+                >
+                  <source src="/videos/day1.mp4" type="video/mp4" />
+                  您的浏览器不支持视频播放
+                </video>
+              </div>
+              <p class="text-center text-gray-500 text-sm mt-3">实践团探访本溪湖工业遗址群全记录</p>
+            </div>
+
             <!-- 合照 -->
             <div class="mb-12">
               <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">

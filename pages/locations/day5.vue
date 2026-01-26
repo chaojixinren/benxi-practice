@@ -140,6 +140,60 @@
               </div>
             </div>
 
+            <!-- 冰酒知识 -->
+            <div class="mb-12 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-2xl p-8">
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <span class="w-10 h-10 bg-amber-600 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">🍷</span>
+                冰酒小百科
+              </h2>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-4 text-gray-600">
+                  <p><strong class="text-amber-700">什么是冰酒？</strong>冰酒（Icewine）是一种甜葡萄酒，采用在葡萄藤上自然冰冻的葡萄酿制而成。当气温降至零下8度以下时，葡萄中的水分结冰，糖分和风味物质高度浓缩，压榨出的葡萄汁甜度极高。</p>
+                  <p><strong class="text-amber-700">为什么桓仁能产冰酒？</strong>桓仁地处北纬41度，与加拿大安大略省、德国莱茵河谷处于同一纬度带，冬季寒冷干燥，具备冰酒酿造所需的极端低温条件。</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                  <h4 class="font-bold text-gray-800 mb-3 text-center">酿造工艺</h4>
+                  <ul class="space-y-2 text-gray-600 text-sm">
+                    <li class="flex items-center">
+                      <span class="w-6 h-6 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center text-xs font-bold mr-2">1</span>
+                      葡萄在枝头自然冰冻至零下8度以下
+                    </li>
+                    <li class="flex items-center">
+                      <span class="w-6 h-6 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center text-xs font-bold mr-2">2</span>
+                      凌晨手工采摘冰冻葡萄
+                    </li>
+                    <li class="flex items-center">
+                      <span class="w-6 h-6 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center text-xs font-bold mr-2">3</span>
+                      低温压榨保留浓缩精华
+                    </li>
+                    <li class="flex items-center">
+                      <span class="w-6 h-6 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center text-xs font-bold mr-2">4</span>
+                      缓慢发酵数月酿成佳酿
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 视频展示 -->
+            <div class="mb-12">
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <span class="w-10 h-10 bg-amber-600 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">🎬</span>
+                实践纪录
+              </h2>
+              <div class="aspect-video rounded-xl overflow-hidden shadow-lg bg-black">
+                <video
+                  controls
+                  class="w-full h-full object-contain"
+                  poster="/images/d5/bg.jpg"
+                >
+                  <source src="/videos/day5.mp4" type="video/mp4" />
+                  您的浏览器不支持视频播放
+                </video>
+              </div>
+              <p class="text-center text-gray-500 text-sm mt-3">实践团参观五女山冰葡萄酒庄园，见证"冰雪酿珍酿"的奇迹</p>
+            </div>
+
             <!-- 合照 -->
             <div class="mb-12">
               <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">

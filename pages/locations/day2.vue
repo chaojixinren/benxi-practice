@@ -123,6 +123,47 @@
               </div>
             </div>
 
+            <!-- 博物馆创新实践 -->
+            <div class="mb-12 bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl p-8">
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <span class="w-10 h-10 bg-red-700 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">💡</span>
+                展陈创新
+              </h2>
+              <div class="space-y-4 text-gray-600">
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                  <h4 class="font-bold text-gray-800 mb-2">人物中心的微观叙事</h4>
+                  <p>纪念馆突破传统编年体叙事框架，以"人物命运"为锚点重构展线。选取邓铁梅、唐聚五等义勇军代表性人物的真实事迹为线索，设计"一人一史"主题展区，通过日记、家书等私人文献与文物组合，展现抗争者的内心世界与家国情怀。</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                  <h4 class="font-bold text-gray-800 mb-2">动态化文物阐释</h4>
+                  <p>运用全息投影、虚拟现实（VR）等技术，将静态文物置于历史场景中还原。在展陈作战地图、军号、旧步枪等战斗文物时，投影同步播放依据战报、回忆录还原的战斗场景，实现"让文物说话"的沉浸式叙事。</p>
+                </div>
+                <div class="bg-white rounded-xl p-4 shadow-sm">
+                  <h4 class="font-bold text-gray-800 mb-2">仪式化体验设计</h4>
+                  <p>设计国歌齐唱、默哀致敬等环节，在特定地点引导观众参与集体仪式，以庄重氛围强化历史敬畏感，实现从"参观游览"到"情感建构"的转变。</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 视频展示 -->
+            <div class="mb-12">
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <span class="w-10 h-10 bg-red-700 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">🎬</span>
+                实践纪录
+              </h2>
+              <div class="aspect-video rounded-xl overflow-hidden shadow-lg bg-black">
+                <video
+                  controls
+                  class="w-full h-full object-contain"
+                  poster="/images/d2/bg.jpg"
+                >
+                  <source src="/videos/day2.mp4" type="video/mp4" />
+                  您的浏览器不支持视频播放
+                </video>
+              </div>
+              <p class="text-center text-gray-500 text-sm mt-3">实践团参观东北抗日义勇军纪念馆全记录</p>
+            </div>
+
             <!-- 结语 -->
             <div class="mb-12">
               <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">

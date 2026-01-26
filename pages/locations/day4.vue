@@ -54,13 +54,16 @@
             <div class="mb-12">
               <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
                 <span class="w-10 h-10 bg-purple-600 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">1</span>
-                版画艺术
+                木版年画
               </h2>
               <p class="text-gray-600 leading-relaxed mb-6">
-                版画是中国传统艺术的重要组成部分，在桓仁有着深厚的历史底蕴。实践团成员在传承人的指导下，亲身体验了版画的制作过程，从选材、雕刻到印刷，每一个步骤都蕴含着匠人的智慧与心血。
+                桓仁木版年画起源于<strong class="text-purple-700">清代中期</strong>，随关内移民传入，并与满族萨满文化、民俗生活深度融合，形成了<strong class="text-purple-700">造型粗犷、色彩浓烈、寓意吉祥</strong>的独特风格。
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                其题材不仅包含传统门神、财神、祥瑞图案，更融入了大量反映长白山区渔猎、农耕生活以及满族神话传说的内容（如"嬷嬷人"形象）。在功能上，它不仅是年节装饰，更是承载祈福禳灾、伦理教化功能的民俗用品。
               </p>
               <p class="text-gray-600 leading-relaxed">
-                一刀一刻间，木板上渐渐浮现出栩栩如生的图案，这不仅是技艺的传承，更是文化的延续。
+                实践团成员在传承人的指导下，亲身体验了版画的制作过程，从选材、雕刻到印刷，每一个步骤都蕴含着匠人的智慧与心血。一刀一刻间，木板上渐渐浮现出栩栩如生的图案，这不仅是技艺的传承，更是文化的延续。
               </p>
             </div>
 
@@ -78,13 +81,16 @@
             <div class="mb-12">
               <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
                 <span class="w-10 h-10 bg-purple-600 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">2</span>
-                草编技艺
+                玉米叶编织
               </h2>
               <p class="text-gray-600 leading-relaxed mb-6">
-                草编是劳动人民智慧的结晶，取材于自然，回归于生活。在传承人的巧手中，普通的稻草、玉米皮化身为精美的工艺品——篮筐、草帽、摆件，每一件都凝聚着朴实的乡土情怀。
+                玉米叶编织技艺源于物资匮乏时期桓仁人民的创造性实践，是<strong class="text-purple-700">"变废为宝、物尽其用"</strong>生态观念的生动体现。主要利用秋收后废弃的玉米苞叶，经过选料、浸泡、染色、编织等多道工序，制作成炕席、坐垫、储物筐、草鞋等生活用品。
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-6">
+                其纹样质朴自然，技法（<strong class="text-purple-700">平编、绞编、缠扣</strong>等）代代相传，不仅解决了实际生活需求，更在编织过程中凝聚了家庭与社区的协作情感，是山地农耕文明"适应自然、利用自然"生存哲学的实物见证。
               </p>
               <p class="text-gray-600 leading-relaxed">
-                实践团成员亲手尝试编织，虽然手法生疏，但在传承人耐心指导下，也完成了简单的作品，深刻体会到了这门技艺的不易与珍贵。
+                如今，玉米叶编织已从实用品转向高端工艺品和生态文创品。设计时尚的编织包、家居饰品、艺术装置等，契合当代绿色消费理念，具备形成特色手工产业、带动妇女居家就业的潜力。
               </p>
             </div>
 
@@ -145,6 +151,69 @@
               <div class="aspect-[16/9] rounded-xl overflow-hidden shadow-lg">
                 <img src="/images/d4/img3.jpg" alt="非遗体验活动" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </div>
+            </div>
+
+            <!-- 传承困境与展望 -->
+            <div class="mb-12 bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8">
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <span class="w-10 h-10 bg-purple-600 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">🔮</span>
+                传承与展望
+              </h2>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-3">面临的挑战</h4>
+                  <ul class="space-y-2 text-gray-600 text-sm">
+                    <li class="flex items-start">
+                      <span class="w-2 h-2 bg-red-400 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                      传承人群断层：核心传承人普遍年事已高，年轻一代学习意愿低
+                    </li>
+                    <li class="flex items-start">
+                      <span class="w-2 h-2 bg-red-400 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                      市场对接错位：传统产品与现代审美和需求脱节
+                    </li>
+                    <li class="flex items-start">
+                      <span class="w-2 h-2 bg-red-400 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                      产业生态薄弱：多为家庭式零散化生产，缺乏统一品牌
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800 mb-3">创新发展路径</h4>
+                  <ul class="space-y-2 text-gray-600 text-sm">
+                    <li class="flex items-start">
+                      <span class="w-2 h-2 bg-green-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                      文化IP构建：利用动漫、短视频等形式进行当代转译
+                    </li>
+                    <li class="flex items-start">
+                      <span class="w-2 h-2 bg-green-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                      技术赋能：建设沉浸式非遗工坊，开发AR体验应用
+                    </li>
+                    <li class="flex items-start">
+                      <span class="w-2 h-2 bg-green-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></span>
+                      产业融合：推动"非遗+旅游""非遗+设计"深度融合
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 视频展示 -->
+            <div class="mb-12">
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <span class="w-10 h-10 bg-purple-600 text-white rounded-lg flex items-center justify-center text-lg font-bold mr-4">🎬</span>
+                实践纪录
+              </h2>
+              <div class="aspect-video rounded-xl overflow-hidden shadow-lg bg-black">
+                <video
+                  controls
+                  class="w-full h-full object-contain"
+                  poster="/images/d4/bg.jpg"
+                >
+                  <source src="/videos/day4.mp4" type="video/mp4" />
+                  您的浏览器不支持视频播放
+                </video>
+              </div>
+              <p class="text-center text-gray-500 text-sm mt-3">实践团体验木版年画与玉米叶编织技艺全记录</p>
             </div>
 
             <!-- 合照 -->
