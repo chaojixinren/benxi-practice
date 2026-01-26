@@ -79,11 +79,6 @@
         <div class="absolute top-40 right-[35%] w-14 h-5 bg-white/25 rounded-full blur-sm"></div>
 
         <div class="container mx-auto px-4">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">实践专列</h2>
-            <p class="text-gray-600 text-lg">点击车厢，开启每日精彩旅程</p>
-          </div>
-
           <!-- 火车容器 -->
           <div class="relative">
             <!-- 桌面端：横向火车 -->
@@ -378,55 +373,6 @@
                   </NuxtLink>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 实践亮点 -->
-      <section class="py-12 md:py-16">
-        <div class="container mx-auto px-4">
-          <div class="text-center mb-10">
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">实践亮点</h2>
-            <p class="text-gray-600">探寻文化根脉，助力乡村振兴</p>
-          </div>
-
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div class="text-center">
-              <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                <svg class="w-8 h-8 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
-              </div>
-              <h3 class="font-bold text-gray-800 mb-1">工业遗产</h3>
-              <p class="text-sm text-gray-500">中国第一铁</p>
-            </div>
-            <div class="text-center">
-              <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
-                </svg>
-              </div>
-              <h3 class="font-bold text-gray-800 mb-1">红色文化</h3>
-              <p class="text-sm text-gray-500">义勇军精神</p>
-            </div>
-            <div class="text-center">
-              <div class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                <svg class="w-8 h-8 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 class="font-bold text-gray-800 mb-1">直播助农</h3>
-              <p class="text-sm text-gray-500">6.1万点赞</p>
-            </div>
-            <div class="text-center">
-              <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              </div>
-              <h3 class="font-bold text-gray-800 mb-1">非遗传承</h3>
-              <p class="text-sm text-gray-500">版画草编</p>
             </div>
           </div>
         </div>
