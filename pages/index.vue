@@ -107,8 +107,8 @@
                     <!-- 车头徽章 -->
                     <div class="absolute top-6 left-1/2 -translate-x-1/2 w-20 h-20 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-full flex items-center justify-center shadow-lg border-4 border-yellow-200">
                       <div class="text-center">
-                        <span class="text-primary-800 font-black text-sm leading-tight block">实践</span>
-                        <span class="text-primary-800 font-black text-sm leading-tight block">专列</span>
+                        <span class="text-primary-800 font-black text-sm leading-tight block">贡物新绎</span>
+                        <span class="text-primary-800 font-black text-sm leading-tight block">溯产助传</span>
                       </div>
                     </div>
 
