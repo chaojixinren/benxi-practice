@@ -82,7 +82,7 @@
         </div>
       </section>
 
-      <!-- 成员展示区（预留） -->
+      <!-- 成员展示区 -->
       <section class="py-12 md:py-16 bg-gray-50">
         <div class="container mx-auto px-4">
           <div class="text-center mb-10">
@@ -90,16 +90,31 @@
             <p class="text-gray-600">感谢每一位成员的辛勤付出</p>
           </div>
 
-          <!-- 成员卡片占位 -->
-          <div class="max-w-4xl mx-auto">
-            <div class="bg-white rounded-xl shadow-md p-8 text-center">
-              <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
+          <!-- 成员卡片 -->
+          <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              <div
+                v-for="(member, index) in teamInfo.members"
+                :key="index"
+                class="bg-white rounded-xl shadow-md p-4 text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                :class="{ 'ring-2 ring-primary ring-offset-2': member.role?.includes('队长') }"
+              >
+                <!-- 头像 -->
+                <div class="w-14 h-14 mx-auto mb-3 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold text-xl shadow-md">
+                  {{ member.name.charAt(0) }}
+                </div>
+                <!-- 姓名 -->
+                <p class="font-semibold text-gray-800 mb-1">
+                  {{ member.name }}
+                  <span v-if="member.role?.includes('队长')" class="inline-block ml-1 px-1.5 py-0.5 bg-primary text-white text-xs rounded">队长</span>
+                </p>
+                <!-- 班级 -->
+                <p class="text-xs text-gray-500 mb-2">{{ member.major }}</p>
+                <!-- 分工 -->
+                <p class="text-xs text-accent leading-relaxed">
+                  {{ member.role?.replace('队长 - ', '') }}
+                </p>
               </div>
-              <p class="text-gray-500">团队成员信息待添加</p>
-              <p class="text-gray-400 text-sm mt-2">可在 data/locations.ts 中的 teamInfo.members 数组添加成员信息</p>
             </div>
           </div>
         </div>
@@ -111,6 +126,8 @@
 </template>
 
 <script setup lang="ts">
+import { teamInfo } from '~/data/locations'
+
 // SEO
 useHead({
   title: '团队介绍 - 贡物新绎 溯产助传',

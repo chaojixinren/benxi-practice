@@ -74,7 +74,22 @@ export const teamInfo: TeamInfo = {
   practiceTheme: '乡村振兴·文化传承·产业发展',
   practiceTime: '2026年1月18日 - 2026年1月22日',
   practiceLocation: '辽宁省本溪市',
-  members: [],
+  members: [
+    // 队长
+    { name: '文博', role: '队长 - 文案、PPT 制作、当地沟通', major: '软国 2506' },
+    // 队员
+    { name: '马玉', role: '文案、绘画设计、直播', major: '软件 2410' },
+    { name: '郝奕', role: '文案写作、PPT 制作', major: '软国 2506' },
+    { name: '莫微', role: '文书写作、公众号推文', major: '计科 2401' },
+    { name: '刘源玫', role: '绘画设计、视频拍摄', major: '软件 2411' },
+    { name: '秦旭', role: '视频脚本、规划统筹', major: '集成 2401' },
+    { name: '杨清皓', role: '视频拍摄、直播', major: '软国 2402' },
+    { name: '徐广平', role: '视频脚本、公众号推文', major: '软国 2506' },
+    { name: '陈拓宇', role: '视频拍摄、PPT 制作', major: '软国 2509' },
+    { name: '金硕国', role: '直播、数据分析、网页', major: '软件 2407' },
+    { name: '吴顾宸', role: 'PPT 制作、直播', major: '集成 2409' },
+    { name: '郭锴齐', role: '网页制作、全栈开发', major: '软国 2501' }
+  ],
   advisors: []
 }
 
