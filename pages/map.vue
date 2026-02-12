@@ -4,8 +4,8 @@
 
     <main class="flex-grow">
       <!-- 页面标题 -->
-      <section class="bg-gradient-to-br from-primary via-primary-700 to-primary-800 text-white py-12 md:py-16">
-        <div class="container mx-auto px-4 text-center">
+      <section class="bg-gradient-to-br from-primary via-primary-700 to-primary-800 text-white py-12 md:py-3">
+        <div class="container mx-auto px-3 text-center">
           <h1 class="text-3xl md:text-4xl font-bold mb-4">实践行程地图</h1>
           <p class="text-lg text-primary-100 max-w-2xl mx-auto">
             点击地图上的标记或下方按钮定位到对应地点
@@ -14,7 +14,7 @@
       </section>
 
       <!-- 地图区域 -->
-      <section class="py-8 md:py-12 bg-gray-50 flex-grow">
+      <section class="py-6 md:py-3 bg-gray-50 flex-grow">
         <div class="container mx-auto px-4">
           <!-- 互动地图 -->
           <ClientOnly>

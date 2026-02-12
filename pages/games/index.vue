@@ -4,7 +4,7 @@
 
     <main class="flex-grow bg-gray-50">
       <!-- 页面标题 -->
-      <section class="bg-gradient-to-br from-primary via-primary-700 to-primary-800 text-white py-12 md:py-16">
+      <section class="bg-gradient-to-br from-primary via-primary-700 to-primary-800 text-white py-12 md:py-6">
         <div class="container mx-auto px-4 text-center">
           <h1 class="text-3xl md:text-4xl font-bold mb-4">实践小游戏</h1>
           <p class="text-lg text-primary-100 max-w-2xl mx-auto">

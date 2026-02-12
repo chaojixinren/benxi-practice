@@ -4,7 +4,7 @@
 
     <main class="flex-grow">
       <!-- 页面标题 -->
-      <section class="bg-gradient-to-br from-primary via-primary-700 to-primary-800 text-white py-12 md:py-16">
+      <section class="bg-gradient-to-br from-primary via-primary-700 to-primary-800 text-white py-12 md:py-6">
         <div class="container mx-auto px-4 text-center">
           <h1 class="text-3xl md:text-4xl font-bold mb-4">团队介绍</h1>
           <p class="text-lg text-primary-100 max-w-2xl mx-auto">
@@ -21,7 +21,7 @@
       </section>
 
       <!-- 吉祥物展示 -->
-      <section class="py-12 md:py-16">
+      <section class="py-12 md:py-0">
         <div class="container mx-auto px-4">
           <div class="text-center mb-10">
             <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">团队吉祥物</h2>
@@ -83,7 +83,7 @@
       </section>
 
       <!-- 成员展示区 -->
-      <section class="py-12 md:py-16 bg-gray-50">
+      <section class="py-12 md:py-4 bg-gray-50">
         <div class="container mx-auto px-4">
           <div class="text-center mb-10">
             <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-2">团队成员</h2>

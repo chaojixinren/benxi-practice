@@ -4,7 +4,7 @@
 
     <main class="flex-grow">
       <!-- 英雄区域 -->
-      <section class="relative text-white py-16 md:py-24 overflow-hidden">
+      <section class="relative text-white py-16 md:py-14 overflow-hidden">
         <!-- 背景图片 -->
         <div class="absolute inset-0">
           <img
