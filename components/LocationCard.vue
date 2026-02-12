@@ -1,7 +1,10 @@
 <template>
   <div class="bg-white rounded-xl shadow-xl overflow-hidden">
     <!-- 头部 -->
-    <div class="relative h-32 bg-gradient-to-br from-primary to-primary-500">
+    <div
+      class="relative h-32 bg-cover bg-center"
+      :style="{ backgroundImage: `url(/images/d${location.id}/bg.jpg)` }"
+    >
       <!-- 关闭按钮 -->
       <button
         class="absolute top-3 right-3 w-8 h-8 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
