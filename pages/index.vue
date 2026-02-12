@@ -66,9 +66,73 @@
         <div class="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-sky-200 to-transparent"></div>
 
 
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-2">
           <!-- 火车容器 -->
           <div class="relative">
+            <!-- 手机端：卡片式时间线 -->
+            <div class="md:hidden">
+              <!-- 标题带左右GIF -->
+              <div class="flex items-center justify-center gap-3 mb-6 relative z-10">
+                <!-- 左侧GIF角色 -->
+                <div class="flex-shrink-0 w-28">
+                  <img
+                    src="/gif/渔小绎.gif"
+                    alt="渔小绎"
+                    class="w-full h-auto drop-shadow-lg"
+                  />
+                </div>
+                <h2 class="text-xl font-bold text-gray-800 text-center">实践行程</h2>
+                <!-- 右侧GIF角色 -->
+                <div class="flex-shrink-0 w-28">
+                  <img
+                    src="/gif/优米.gif"
+                    alt="优米"
+                    class="w-full h-auto drop-shadow-lg"
+                  />
+                </div>
+              </div>
+
+              <!-- 卡片列表 -->
+              <div class="space-y-4 px-2">
+                <template v-for="(location, index) in sortedLocations" :key="location.id">
+                  <NuxtLink
+                    :to="`/locations/day${location.id}`"
+                    class="block group"
+                  >
+                    <div class="relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-[1.02]" :class="getCardBackground(location.id)">
+                      <!-- 背景图 -->
+                      <img
+                        :src="`/images/d${location.id}/bg.jpg`"
+                        :alt="location.name"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <!-- 遮罩层 -->
+                      <div class="absolute inset-0" :class="getDayOverlay(location.id)"></div>
+                      <!-- 内容 -->
+                      <div class="relative z-10 flex items-center p-4">
+                        <!-- DAY标签 -->
+                        <div class="flex-shrink-0 w-16 h-16 rounded-xl bg-white/20 backdrop-blur-sm flex flex-col items-center justify-center text-white border border-white/30">
+                          <span class="text-xs font-bold">DAY</span>
+                          <span class="text-2xl font-black">{{ location.id }}</span>
+                        </div>
+                        <!-- 地点信息 -->
+                        <div class="ml-4 flex-1">
+                          <h3 class="text-lg font-bold text-white drop-shadow-md">{{ location.name }}</h3>
+                          <p class="text-sm text-white/80 mt-1 line-clamp-2">{{ location.description || '点击查看详情' }}</p>
+                        </div>
+                        <!-- 箭头 -->
+                        <div class="flex-shrink-0 ml-2">
+                          <svg class="w-6 h-6 text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </NuxtLink>
+                </template>
+              </div>
+            </div>
+
             <!-- 桌面端：横向火车图片 -->
             <div class="hidden md:block">
               <div class="relative max-w-16xl mx-auto">
@@ -177,6 +241,18 @@ function getWindowBorder(day: number): string {
   return borders[day] || 'border-primary'
 }
 
+// 手机端卡片背景边框
+function getCardBackground(day: number): string {
+  const backgrounds: Record<number, string> = {
+    1: 'border-l-4 border-gray-500',
+    2: 'border-l-4 border-red-500',
+    3: 'border-l-4 border-cyan-500',
+    4: 'border-l-4 border-purple-500',
+    5: 'border-l-4 border-amber-500'
+  }
+  return backgrounds[day] || 'border-l-4 border-primary'
+}
+
 
 // 火车图片车窗位置 - 从左到右排列5个入口（DAY1到DAY5）
 function getWindowStyle(index: number): Record<string, string> {
@@ -263,5 +339,15 @@ useHead({
 .train-window-link[href]:hover > div {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   border-color: #fbbf24;
+}
+
+/* 手机端卡片样式 */
+@media (max-width: 767px) {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 </style>
