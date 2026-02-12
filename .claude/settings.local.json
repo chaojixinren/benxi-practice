@@ -13,7 +13,8 @@
       "Bash(node -c:*)",
       "Bash(findstr:*)",
       "Bash(dir \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\本溪实践网站\\\\public\\\\images\" /b)",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "mcp__zai-mcp-server__analyze_image"
     ]
   }
 }
