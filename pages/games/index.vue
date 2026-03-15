@@ -16,7 +16,7 @@
       <!-- 游戏列表 -->
       <section class="py-12 md:py-16">
         <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
             <!-- 直播带货达人 -->
             <NuxtLink
               to="/games/live"
@@ -65,6 +65,36 @@
                 </h3>
                 <p class="text-gray-600 mb-5">
                   体验传统版画制作！在画布上雕刻图案，完成3关挑战，感受非遗魅力！
+                </p>
+                <div class="flex items-center justify-end">
+                  <span class="text-primary font-medium group-hover:translate-x-1 transition-transform inline-flex items-center">
+                    开始游戏
+                    <svg class="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </NuxtLink>
+
+            <!-- 细鳞鱼养成 -->
+            <NuxtLink
+              to="/games/fish"
+              class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+            >
+              <div class="h-56 relative overflow-hidden">
+                <img src="/images/game/index/fish_bg.jpg" alt="细鳞鱼养成" class="absolute inset-0 w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-white/10 backdrop-blur-[1px]"></div>
+                <!-- 装饰 -->
+                <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-white/10 rounded-full"></div>
+                <div class="absolute -top-4 -left-4 w-20 h-20 bg-white/10 rounded-full"></div>
+              </div>
+              <div class="p-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3 group-hover:text-primary transition-colors">
+                  细鳞鱼养成
+                </h3>
+                <p class="text-gray-600 mb-5">
+                  养成一条细鳞鱼！从鱼卵到成鱼，喂食互动，最终可获取买鱼优惠卷！
                 </p>
                 <div class="flex items-center justify-end">
                   <span class="text-primary font-medium group-hover:translate-x-1 transition-transform inline-flex items-center">
